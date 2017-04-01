@@ -59,7 +59,7 @@ public:
      * \param papper_prob Вероятность получения черного пикселя из равномерного распределения
      * \return
      */
-    cv::Mat addnoises(cv::Mat image,float sigma,int solt_prob,int papper_prob);
+    virtual cv::Mat addnoises(cv::Mat image,float sigma,int solt_prob,int papper_prob);
 };
 }
 

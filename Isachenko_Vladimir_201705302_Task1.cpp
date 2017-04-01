@@ -18,7 +18,7 @@ namespace mvms_2017
 	}
 
 	Isachenko_Vladimir_201705302_Task1::Isachenko_Vladimir_201705302_Task1()
-		: Isachenko_Vladimir_201705302_Task1(true)
+		: Task1(true)
 	{
 
 	}
