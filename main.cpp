@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	try
 	{
 		cv::Mat img = cv::imread("Lenna.png", 0);
-        cv::imshow("DISPLAY", my_class.addnoises(img, 0.25, 20, 100));
+        cv::imshow("DISPLAY", my_class.addnoises(img, 20, 245, 10));
 		cv::waitKey(0);
     }
 	catch(std::exception ex)
