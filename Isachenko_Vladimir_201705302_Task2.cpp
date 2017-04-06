@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS
 #include "Isachenko_Vladimir_201705302_Task2.h"
 
 namespace mvms_2017
@@ -26,7 +26,7 @@ namespace mvms_2017
 
 	cv::Mat Isachenko_Vladimir_201705302_Task2::addnoises(cv::Mat image, float sigma, int solt_prob, int papper_prob)
 	{
-		int H = image.rows, W = image.cols;
+		int H = image.cols, W = image.rows;
 
 		cv::Mat result = image.clone();
 		cv::RNG rng;
