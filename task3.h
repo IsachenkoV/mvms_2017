@@ -20,7 +20,7 @@ public:
     cv::Mat labelImage(cv::Mat binimage);
 
     //Реализовать алгоритм расчета расстояния до границы (Distance transform)
-    cv::Mat distanceTransform(cv::Mat binimage);
+    virtual cv::Mat distanceTransform(cv::Mat binimage);
     //Реализовать детектор краев Кенни
     cv::Mat Canny(cv::Mat grayimage,int low_th,int high_th);
     //Реализовать алгоритм сегментации методом водораздела (Watershed)

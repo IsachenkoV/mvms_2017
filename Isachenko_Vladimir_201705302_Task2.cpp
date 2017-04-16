@@ -24,7 +24,7 @@ namespace mvms_2017
 		return LAST_NAME;
 	}
 
-	cv::Mat Isachenko_Vladimir_201705302_Task2::addnoises(cv::Mat image, float sigma, int solt_prob, int papper_prob)
+	cv::Mat Isachenko_Vladimir_201705302_Task2::addnoises(cv::Mat image, float sigma, int solt_prob, int pepper_prob)
 	{
 		int H = image.cols, W = image.rows;
 
@@ -50,11 +50,11 @@ namespace mvms_2017
 			for (int j = 0; j < W; j++)
 			{
 				int randInt = rng.uniform(0, 255);
-				if (randInt > solt_prob)
+				if (randInt >= 255 - solt_prob)
 				{
 					result.at<uchar>(cv::Point(i, j)) = 255;
 				}
-				if (randInt < papper_prob)
+				if (randInt <= pepper_prob)
 				{
 					result.at<uchar>(cv::Point(i, j)) = 0;
 				}
