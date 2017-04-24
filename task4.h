@@ -18,7 +18,7 @@ public:
      * \param window_size размер окна
      * \return значение
      */
-    cv::Mat Harris(cv::Mat grayimage,int window_size);
+	virtual cv::Mat Harris(cv::Mat grayimage,int window_size);
 
     /*!
      * \brief LoG Реализовать  многомасштабный детектор пятен
