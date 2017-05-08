@@ -38,7 +38,7 @@ public:
      * \param ray2 луч 2
      * \return точка пересечения
      */
-    cv::Point3f raysIntersection(cv::Point3f pt1,cv::Point3f ray1,cv::Point3f pt2,cv::Point3f ray2);
+    virtual cv::Point3f raysIntersection(cv::Point3f pt1,cv::Point3f ray1,cv::Point3f pt2,cv::Point3f ray2);
 
     /*!
      * \brief correctLensDistorsions Алгоритм коррекции дисторсии линзы по коэффициентам r2,r4, k1, k2
