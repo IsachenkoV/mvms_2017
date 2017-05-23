@@ -9,6 +9,7 @@ namespace mvms_2017
 		const int VARIANT_NUMBER = 201705302;
 		const std::string FIRST_NAME = "Владимир";
 		const std::string LAST_NAME = "Исаченко";
+		const float EPS = 1e-8;
 
 	public:
 		Isachenko_Vladimir_201705302_Task5();
